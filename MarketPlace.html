@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NULL</title>
+
+<style>
+    .sidebar {
+   position: fixed;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   background-color: gray;
+   width: 225px;
+   z-index: 200;
+   padding-top: 5px;
+ }
+ 
+ .sidebar-box {
+   margin-left: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+   background-color:ivory;
+   margin-bottom: 5px;
+   margin-right: 12px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+   transition: all 0.1s ease-in-out;
+ }
+ 
+ .sidebar-box:hover {
+   transform: translateX(8px);
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+ }
+ 
+ .sidebar-box:active {
+   transform: scale(0.95);
+   background-color: #004466;
+   box-shadow: none;
+   opacity: 0.8;
+ }
+ 
+ .Logo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 30px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+ }
+
+ .Nav-text{
+    margin-left: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: darkgreen;
+
+  
+ }
+
+ .wallet{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 650px;
+    background-color: ivory;
+    width:100px;
+    z-index: 200;
+    padding-top: 5px;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 30px;
+    
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+ 
+ }
+
+ .content{
+    margin-left: 225px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    font-weight: 600;
+    
+    align-items: center;
+    text-align: center;
+    
+ }
+
+ .add{   
+    font-size: 24px;
+    color: darkgreen;
+ }
+
+ .sponsor{
+    font-weight: 600;
+    font-family: Berlin Sans FB;
+    font-size: 30px;   
+ }
+
+
+
+ a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+body
+{
+   background-color: ivory;
+}
+
+body {
+    background:ivory;
+  }
+
+h1
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.types
+{
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 23px;
+    
+}
+.type-picture
+{
+    width: 300px;
+    
+}
+.types > img
+{
+display: block;
+width: 100%;
+border-radius: 25px;
+
+}
+.types > .typename
+{
+    position: absolute;
+    inset: 0;
+    font-size: 4rem;
+    padding: 2rem;
+    background:rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    
+    
+
+}
+
+.types > img,
+.types > .typename
+{
+    transition: 500ms ease-in-out;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+
+}
+
+.types > .typename.fade
+{
+    opacity: 0;
+}
+.types:hover > .typename.fade
+{
+opacity: 1;
+}
+
+
+.types:hover >img.blur
+{
+    filter: blur(3px);
+}
+.Services{
+
+    margin-left: 225px;
+   
+}
+
+
+/* Define the styles for the button */
+/* Define the styles for the button */
+.Sanjith {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7d2c0c3;
+    color: #402d2f;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Define the hover and active states of the button */
+  .Sanjith:hover {
+    background-color: #D9B8A9;
+    color: #543D3F;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.542);
+  }
+  
+  .Sanjith:active {
+    background-color: #CDAE9D;
+    color: #543D3F;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
+  }
+  
+  /* Define the pseudo-elements for the button */
+  .Sanjith::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+  }
+  
+  .Sanjith::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #F7D2C0;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: all 0.3s ease-out;
+  }
+  
+  .Sanjith:hover::after {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+  
+
+
+
+</style>
+</head>
+
+<body>
+
+
+    <div class="sidebar">
+        <a href="Index.html"></a>
+        <div class="Logo"> <img src="null.png" height="65px"><p style="margin-left: 10px;"> NULL.</p></div>
+
+        <a href="Index.html">
+
+            <div class="sidebar-box"> <img style="margin-left: 5px;" src="home.png" height="25px" ><div class="Nav-text">Home</div> </div>
+
+        </a>
+
+       <a href="MarketPlace.html">
+        <div class="sidebar-box"><img style="margin-left: 5px;" src="shop.png" height="25px"><div class="Nav-text">Marketplace</div></div>
+
+       </a>
+        
+
+
+
+    <a href="account.html">
+
+        <div class="sidebar-box"><img style="margin-left: 5px;" src="user.png" height="25px"><div class="Nav-text">Account</div></div>
+    </a>
+        
+    
+    
+    </div>
+    <div class="background-container">
+        <br><br><br>
+
+
+        <div class="Services">
+   <center style="font-family:Cambria; font-size:40px; font-weight:600;">Marketplace</center>
+            <h1 style="font-family: Calibri;">Games</h1>
+            <div class="Service_Container">
+                <div class="Category">
+                    <div class="types">
+                        <img class ="type-picture blur" src="1.1.jpg">
+                        <div class="typename fade"> <a href="games.html"><button class="Sanjith">Explore</button></a> </div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="1.2.jpg">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="1.3.jpg">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="1.4.jpg">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="1.5.jpg">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="1.6.jpg">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+     
+                </div>
+                
+            </div>
+            
+            
+    
+    
+        </div>
+
+        <div class="Services">
+   
+            <h1 style="font-family: Calibri;">Artists</h1>
+            <div class="Service_Container">
+                <div class="Category">
+                    <div class="types">
+                        <img class ="type-picture blur" src="2.1.png">
+
+                        
+                        <div class="typename fade"><a href="Artist.html"><button class="Sanjith">Explore</button></a></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="2.2.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="2.3.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="2.4.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="2.5.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="2.6.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+     
+                </div>
+                
+            </div>
+            
+            
+    
+    
+        </div>
+        <div>
+        <div class="Services">
+   
+            <h1 style="font-family: Calibri;">Professionals</h1>
+            <div class="Service_Container">
+                <div class="Category">
+                    <div class="types">
+                        <img class ="type-picture blur" src="4.1.png">
+                        <div class="typename fade">  <a href="Sas.html"><button class="Sanjith">Explore</button></a> </div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="4.2.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="4.3.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="4.4.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="4.5.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+                    <div class="types">
+                        <img class ="type-picture blur" src="4.6.png">
+                        <div class="typename fade"><button class="Sanjith">Explore</button></div>
+                    </div>
+     
+                </div>
+                
+            </div>
+            
+            
+    
+    
+        </div>
+    </div>
+</div>
+</body>
+</html>
